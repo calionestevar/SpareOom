@@ -3,7 +3,7 @@ import { ChevronLeft, Plus, Check, X } from 'lucide-react';
 import { usePantry } from '../../context/littlehouse/pantry';
 import { formatDisplayDate } from '../../utils/lotr/shire';
 import { getSubjectColor } from '../../constants/narnia/cairParavel';
-import PADD from './PADD';
+import PADD from '../shared/PADD';
 
 const ViewScreen = ({ selectedDay, onBack }) => {
   const { kindredSpirits, getLessonsForDay, toggleLessonComplete, deleteLesson } = usePantry();

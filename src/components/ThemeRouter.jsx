@@ -2,14 +2,16 @@ import React from 'react';
 import { useTheme } from '../context/littlehouse/themeContext';
 
 // Import default/fallback components
-import DefaultBridge from './startrek/Bridge';
-import DefaultViewScreen from './startrek/ViewScreen';
-import DefaultWelcomeScreen from './startrek/WelcomeScreen';
+import DefaultBridge from './startrek/Bridge.LCARS.jsx';
+import DefaultViewScreen from './startrek/ViewScreen.LCARS.jsx';
+import DefaultWelcomeScreen from './startrek/WelcomeScreen.LCARS.jsx';
 
 // Import theme-specific components
-import LCARSBridge from './startrek/Bridge.LCARS';
-import NarniaBridge from './narnia/Bridge.Chronicle';
-import LOTRBridge from './lotr/Bridge.Manuscript';
+import LCARSBridge from './startrek/Bridge.LCARS.jsx';
+import NarniaBridge from './narnia/Bridge.Chronicle.jsx';
+import LOTRViewScreen from './lotr/ViewScreen.Manuscript.jsx';
+import LOTRWelcomeScreen from './lotr/WelcomeScreen.Manuscript.jsx';
+//import LOTRBridge from './lotr/Bridge.Manuscript';
 // ... import others as you create them
 
 /**
@@ -25,7 +27,7 @@ const THEME_COMPONENTS = {
   bridge: {
     startrek: LCARSBridge,
     narnia: NarniaBridge,
-    lotr: LOTRBridge,
+    lotr: DefaultBridge, // TODO: Create LOTR version
     stargate: DefaultBridge, // TODO: Create Stargate version
     anne: DefaultBridge,     // TODO: Create Anne version
     littlehouse: DefaultBridge, // TODO: Create Little House version
@@ -36,7 +38,7 @@ const THEME_COMPONENTS = {
   viewscreen: {
     startrek: DefaultViewScreen, // TODO: Create LCARS version
     narnia: DefaultViewScreen,   // TODO: Create Chronicle version
-    lotr: DefaultViewScreen,     // TODO: Create Manuscript version
+    lotr: LOTRViewScreen,     // TODO: Create Manuscript version
     stargate: DefaultViewScreen,
     anne: DefaultViewScreen,
     littlehouse: DefaultViewScreen,
@@ -47,7 +49,7 @@ const THEME_COMPONENTS = {
   welcome: {
     startrek: DefaultWelcomeScreen,
     narnia: DefaultWelcomeScreen,
-    lotr: DefaultWelcomeScreen,
+    lotr: LOTRWelcomeScreen,
     stargate: DefaultWelcomeScreen,
     anne: DefaultWelcomeScreen,
     littlehouse: DefaultWelcomeScreen,

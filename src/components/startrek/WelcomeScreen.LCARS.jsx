@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { BookOpen, Palette, Sparkles, Zap, ArrowRight, Shield, Scroll, Radio, Flower, Home } from 'lucide-react';
 import { useTheme } from '../../context/littlehouse/themeContext';
 import { AUTHENTIC_THEME_FONTS, AUTHENTIC_THEME_COLORS, AUTHENTIC_DESIGN_ELEMENTS } from '../../constants/narnia/authenticFonts';
-import ThemeSelector from './ThemeSelector';
+import ThemeSelector from '../shared/ThemeSelector';
 
 const UltraAuthenticWelcomeScreen = ({ onGetStarted }) => {
   const { theme } = useTheme();
