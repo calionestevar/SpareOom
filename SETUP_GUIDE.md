@@ -58,8 +58,8 @@ Copy each of the provided code files into their respective locations:
 - `src/components/startrek/WelcomeScreen.jsx`
 
 **Main App Files:**
-- `src/App.jsx`
-- `src/index.jsx`
+- `src/App.tsx`
+- `src/index.tsx`
 - `README.md` (in root directory)
 
 ### 5. Update Tailwind CSS

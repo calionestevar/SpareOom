@@ -1,0 +1,16 @@
+:root {
+  --background: 15 26 20;
+  --surface: 22 36 27;
+  --border: 71 85 105;
+
+  --primary: 201 162 77;
+  --accent: 107 142 35;
+
+  --text-primary: 245 241 232;
+  --text-secondary: 207 199 184;
+  --text-muted: 156 149 138;
+
+  --font-heading: 'Ringbearer', serif;
+  --font-body: 'Aniron','Cinzel', serif;
+  --font-ui: 'EB Garamond', serif;
+}
